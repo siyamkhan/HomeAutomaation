@@ -124,10 +124,6 @@ Implementation:
   
   ![](images/HAcircuitDiagram4.jpeg)
   
-  Arduino Code:
-  
-  
-  Android App:
   
   
   Future Develpment:
