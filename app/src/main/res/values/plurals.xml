@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="switch_quantity">
+        <item quantity="other">switches</item>
+        <item quantity="one">switch</item>
+    </plurals>
+</resources>

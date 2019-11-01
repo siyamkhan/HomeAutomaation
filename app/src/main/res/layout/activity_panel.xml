@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/colorDarkCyan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:theme="@style/AppTheme" app:titleTextColor="@color/colorWhite" />
+    <RelativeLayout android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/adView" android:layout_below="@id/adView_top">
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/tv_empty_list_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/press_button_to_add_new_switch" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView android:id="@id/adView_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/toolbar" android:layout_centerHorizontal="true" ads:adSize="BANNER" ads:adUnitId="@string/banner_ad_unit_id" xmlns:ads="http://schemas.android.com/apk/res-auto" />
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSize="BANNER" ads:adUnitId="@string/banner_ad_unit_id" xmlns:ads="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

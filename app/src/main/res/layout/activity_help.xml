@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/colorDarkCyan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:theme="@style/AppTheme" app:titleTextColor="@color/colorWhite" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar">
+        <TextView android:textSize="16.0sp" android:textColor="@color/colorBlack" android:id="@id/tv_guide_lines" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:text="@string/help_guideline" />
+    </ScrollView>
+</RelativeLayout>

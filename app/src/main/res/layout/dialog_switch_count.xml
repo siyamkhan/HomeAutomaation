@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="28.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center_horizontal" android:id="@id/et_number_of_switch" android:layout_width="50.0dip" android:layout_height="wrap_content" android:maxLength="2" android:layout_centerHorizontal="true" android:inputType="number" />
+    <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/enter_any_number_from_1_to_12" android:layout_below="@id/et_number_of_switch" android:layout_centerHorizontal="true" />
+</RelativeLayout>

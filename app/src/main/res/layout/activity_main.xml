@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/colorDarkCyan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:theme="@style/ThemeOverlay.AppCompat.Light" app:titleTextColor="@color/colorWhite" />
+    <Button android:textColor="@color/colorWhite" android:id="@id/btn_paired" android:background="@drawable/bg_button" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/paired_device" android:layout_below="@id/toolbar" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/tv_note" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/please_tap_on_HC05_HC06_to_connect" android:layout_below="@id/btn_paired" />
+    <View android:id="@id/view_divider" android:background="@color/colorCyan" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="2.0dip" android:layout_below="@id/tv_note" />
+    <ListView android:id="@id/lv_paired_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_divider" />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/colorDarkCyan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:theme="@style/AppTheme" app:titleTextColor="@color/colorWhite" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:id="@id/lyt_add_switch" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout android:textColorHint="@color/colorCyan" android:id="@id/til_switch_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/adView" android:layout_centerHorizontal="true" app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+                <EditText android:id="@id/et_switch_name" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/switch_name" android:inputType="text" app:backgroundTint="@color/colorCyan" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:textColorHint="@color/colorCyan" android:id="@id/til_command" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_below="@id/til_switch_name" android:layout_centerHorizontal="true" app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+                <EditText android:id="@id/et_command" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/command" android:inputType="text" app:backgroundTint="@color/colorCyan" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/colorBlack" android:id="@id/tv_type_heading" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/type_of_switch" android:layout_below="@id/til_command" />
+            <RadioGroup android:id="@id/radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_below="@id/tv_type_heading">
+                <RadioButton android:id="@id/rb_bulb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bulb" />
+                <RadioButton android:id="@id/rb_fan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fan" />
+                <RadioButton android:id="@id/rb_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv" />
+                <RadioButton android:id="@id/rb_speakers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speakers" />
+                <RadioButton android:id="@id/rb_others" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/others" />
+            </RadioGroup>
+            <Button android:textColor="@color/colorWhite" android:id="@id/btn_add" android:background="@drawable/bg_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add" android:layout_below="@id/radio_group" />
+            <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true" ads:adSize="BANNER" ads:adUnitId="@string/banner_ad_unit_id" xmlns:ads="http://schemas.android.com/apk/res-auto" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
