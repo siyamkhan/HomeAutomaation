@@ -1,16 +1,14 @@
-#                    HomeAutomation
+
 #             Android Home Automation System using Arduino
 
-Introduction
-
-This system enables you to control your home applicances through bluetooth.Wanted to control the lights, fan and other appliances from your smartphone.This Home Automation will show how to make your home automated using an android smartphone. Using this android application we will be able to control lights, speakers, Led ,etc all from our smartphone. 
+# Introduction
 
 The main objective of this project is to develop a home automation system using an Arduino board with Bluetooth being remotely controlled by any Android OS smartphone. As technology is advancing so houses are also getting smarter. Modern houses are gradually shifting from conventional switches to centralized control system, involving remote controlled switches. Presently, conventional wall switches located in different parts of the house makes it difficult for the user to go near them to operate. Even more it becomes more difficult for the elderly or physically handicapped people to do so. Remote controlled home automation system provides a most modern solution with smartphones.
 
 In order to achieve this, a Bluetooth module is interfaced to the Arduino board at the receiver end while on the transmitter end, an android application on the phone sends commands to the receiver where loads are connected.The loads can be turned ON/OFF remotely through this technology.
 
 
-Block Diagram
+# Block Diagram
 
 The Block Diagram for this project have mainly three block.
 
@@ -31,9 +29,9 @@ Relay Board: Relay board is nothing, it is a Magnetic Switch. I am using a 4 cha
 
 
 
-Componenets Required for this project:
+# Componenets Required for this project:
 
-Hardware :
+# Hardware :
 
 1. Arduino MegA.
 
@@ -50,14 +48,15 @@ Hardware :
 9. Some Leds
 10. Adapter 12v for the fan to get the power
 
-Software :
+# Software :
+
 1.Arduino IDE : Arduino .
 
 2.Android phone with Home Control Application
 
 
 
-Working of the System:
+# Working of the System:
 
 Arduino will get ready to receive commands once the Android App successfully paired with the Circuit over the bluetooth channel. Once a button is pressed a value will be sent(Eg:- "A") by the App and it will be received by the Circuit though the Bluetooth Module. The value received by the Bluetooth Module will be sent to the receive port of Arduino.
 Arduino will check the Value received and it will Control the Realy according to that. 
@@ -85,9 +84,9 @@ Wiring the PIR motion sensor to an Arduino is pretty straightforward – the sen
 
 
 
-Implementation:
+# Implementation:
 
-  Circuit Diagram:
+  # Circuit Diagram:
   
   Connection of Arduiono Mega,4 channel relay and Bluetooth Hc-06 with help of jumper wires are as follow:
   
@@ -126,19 +125,4 @@ Implementation:
   
   
   
-  Future Develpment:
   
-  Though overall the project is completed successfully, some extensions are as under in future:
-    •	In future it will also be extended to control TV channels, air conditioning temperatures and so on. Limitation to control only           several devices can be removed by extending automation of all other home appliances.
-    •	We can build cross platform system that can be deployed on various platforms like iOS, Windows.
-    • It can be enhanced to control the speed of the fan
-    • Home automation and Device controlling can be done using Internet of Things – IOT technology.
-    •	To expand the coverage area of Bluetooth and make it accessible everywhere.
-    •	Security cameras can be controlled, allowing the user to observe activity around a house or business.
-    •	Security systems can include motion sensors that will detect any kind of unauthorized movement and notify the user.
-    •	Scope of this project can be expanded to many areas by not restricting to only home.
-    • We can replace Bluetooth by GSM modem so that we can achieve device controlling by sending SMS using GSM modem.
-    •	In future will also assist in conservation of energy like if you left any home appliances then we can control that appliance from       the system your mobile and can switch it off using the internet connectivity.
-
-
-
